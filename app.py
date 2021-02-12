@@ -17,11 +17,6 @@ st.write("""
 
 # Predicción de victimización de empresas
 
-![Some California Houses](https://image.freepik.com/vector-gratis/chat-bot-inteligencia-artificial-isometrica-concepto-ia-iot-empresarial_106788-2007.jpg)
-
-------------
-
-
 Esta aplicación predice la victimizacin  de una empresa en Perú mediante un modelo de aprendizaje automático impulsado por[Pycaret](https://pycaret.org/).
 
 Los datos del modelo son btenids de INEI [victimizacin de empresas](https://www.inei.gob.pe) Dataset.
@@ -31,21 +26,10 @@ Juega con los valores a través de los controles deslizantes del panel izquierdo
 st.write("---")
 
 
-# Import Data - the original source has been commented out here, but left in so the CSV files can be sourced again in future, if needed.
-
-
-# Import the data from Google
-# train_df = pd.read_csv("https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv")
-# train_df = train_df.reindex(np.random.permutation(train_df.index)) # randomise the examples
-# test_df = pd.read_csv("https://download.mlcc.google.com/mledu-datasets/california_housing_test.csv")
-
-# full_df = pd.concat([train_df, test_df])
 
 full_df = pd.read_csv('data/example1.csv')
 
-# Assign features (X) and target (Y) to DataFrames
-    #X = full_df    
-    #Y = X.pop('median_house_value')
+
 
 # Sidebar - this sidebar allows the user to set the parameters that will be used by the model to create the prediction.
 st.sidebar.header('Especifique los parámetros para determinar la predicción.')
